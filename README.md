@@ -1,6 +1,6 @@
 # delilah-resto
 
-Una API REST para la gestión de las órdenes y CRUD de productos del restaurante Delilah Restó, un proyecto del curso de Desarrollo Web Full Stack de Acamica. 
+API REST para la gestión de las órdenes y CRUD de productos del restaurante Delilah Restó, un proyecto del curso de Desarrollo Web Full Stack de Acamica. 
 
 ## Instalación
 
