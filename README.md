@@ -13,6 +13,13 @@ Instalar las dependencias incluidas en el archivo de package.json. El acceso a l
     password: uA4Bvkhl0Z
 ```
 
+## Arquitectura de datos
+
+Tablas y relaciones.
+
+<img>![Tabla de datos](/Delilah.svg)</img>
+
+
 ## Rutas y colecciones de Postman
 
 Desde estos cuatro links se puede acceder a las colecciones de rutas y ejemplos de respuestas de cada elemento, para facilitar el testeo vía Postman.
