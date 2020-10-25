@@ -4,7 +4,7 @@ API REST para la gestión de las órdenes y CRUD de productos del restaurante De
 
 ## Instalación
 
-Instalar las dependencias incluidas e iniciar el script "dev". El acceso a la base de datos es a través de la web [phpMyAdmin](https://remotemysql.com/phpmyadmin/).
+Instalar las dependencias incluidas e iniciar el script "dev". El acceso a la base de datos es a través de la web [phpMyAdmin](https://remotemysql.com/phpmyadmin/). Los usuarios, por default, se registran como "customer" (cliente) y se puede modificar su rol a "admin" desde la base de datos. 
 
 ```bash
     host: 'remotemysql.com',
