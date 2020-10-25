@@ -4,6 +4,7 @@ const Sequelize = require('sequelize');
 const { User } = require('../../db');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const JWT_TOKEN = "secret"
 
 //public routes
 router.post('/register', async (req, res) => {
@@ -56,7 +57,7 @@ router.post('/login', (req, res) => {
             });
         } else {
             //create and asign token
-            const token = jwt.sign({ id: user.dataValues.id, role: user.dataValues.role }, process.env.TOKEN_SECRET);
+            const token = jwt.sign({ id: user.dataValues.id, role: user.dataValues.role }, JWT_TOKEN);
             return res.header('auth-token', token).json({
                 message: '¡Bienvenid@ ' + user.dataValues.username + '!',
                 getTotalProducts: {
