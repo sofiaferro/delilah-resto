@@ -4,7 +4,7 @@ const Sequelize = require('sequelize');
 const { User } = require('../../db');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
-const JWT_TOKEN = "secret"
+const JWT_TOKEN = 'secret';
 
 //public routes
 router.post('/register', async (req, res) => {
