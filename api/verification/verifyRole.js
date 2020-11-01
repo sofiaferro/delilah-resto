@@ -1,4 +1,5 @@
 const jwt = require('jsonwebtoken');
+const JWT_TOKEN = 'secret';
 
 module.exports = (req, res, next) => {
     try {
@@ -6,7 +7,7 @@ module.exports = (req, res, next) => {
         if (!token) {
             res.status(401).send('Acceso denegado');
         } 
-            const verified = jwt.verify(token, process.env.TOKEN_SECRET);
+            const verified = jwt.verify(token, JWT_TOKEN);
             req.user = verified;
             const userRole = req.user.role
 
