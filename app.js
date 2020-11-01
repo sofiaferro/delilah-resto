@@ -6,14 +6,14 @@ const Sequelize = require('sequelize');
 const dotenv = require('dotenv');
 const jwt = require('jsonwebtoken');
 
+dotenv.config();
+
 //importar rutas
 const authRoutes = require('./api/routes/auth');
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 const userRoutes = require('./api/routes/users');
 const db = require('./db')
-
-dotenv.config();
 
 //body parser middlewares
 app.use(bodyParser.urlencoded({ extended: false }));
